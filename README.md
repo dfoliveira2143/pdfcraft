@@ -601,3 +601,9 @@ Forks and modified versions must remove them.
 </p>
 
 The Tools panel sits on the left, or on the right with Preferences ▸ Tools panel side. The rail stays at the right edge and opens one side panel beside it. Drag a panel's inner edge to resize it; widths are remembered. F4 shows or hides the side panel and Shift+F4 the Tools panel (also in the View menu); View ▸ Reset side panels restores the default arrangement.
+
+## Documentação para agentes
+
+Última atualização desta seção: 2026-10-28.
+
+Comece pelo [índice de documentação](docs/INDEX.md): visão geral, funcionalidades, padrões, operação, decisões e rotina de manutenção para retomar o projeto em uma nova sessão.
