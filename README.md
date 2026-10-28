@@ -1,4 +1,9 @@
 <p align="center">
+
+## Politica de validacao local
+
+Siga a politica obrigatoria de [validacao documental e confirmacao para testes](AGENTS.md#validacao-documental-e-confirmacao-para-testes). Commits exclusivamente documentais elegiveis usam revisao do diff, `git diff --check`, conferencia de links locais e coerencia das instrucoes; informe a dispensa da validacao completa. Testes, compilacao, lint de codigo e CI exigem explicacao previa de necessidade e alcance e confirmacao explicita do usuario antes de executar. Comandos e rotinas abaixo estao sujeitos a essa politica, inclusive verificacoes iniciais; autonomia nao dispensa essa confirmacao.
+
   <a href="https://getartcraft.com/">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="docs/brand/artcraft-logo-white.svg">
@@ -363,7 +368,7 @@ PdfCraft is a Cargo workspace of focused crates, layered so the core never depen
 | `pdfcraft-automation` | Agent control: the headless tool table, `pdfcraft-cli run`, and the opt-in MCP server |
 | `pdfcraft-ui-egui` | The desktop and web interface |
 
-**Quality gates.** Every change passes the same automated checks:
+**Quality gates.** Changes requiring code validation use the following checks, subject to the documentation exception and explicit user confirmation in AGENTS.md:
 - formatting, and Clippy with warnings as errors;
 - 200+ unit, property and UI tests;
 - crate-layering rules and a WebAssembly build check;

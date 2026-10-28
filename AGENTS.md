@@ -1,5 +1,17 @@
 # AGENTS.md — rules for every agent and contributor
 
+## Validacao documental e confirmacao para testes
+
+- Esta politica e obrigatoria e prevalece sobre orientacoes conflitantes de validacao automatica ou autonomia neste arquivo, em CLAUDE.md, planos e demais referencias. Preserva as regras de organizacao dos commits, branch e autorizacao de push.
+- A excecao vale somente para commits exclusivamente documentais: README.md, CLAUDE.md, AGENTS.md, instrucoes para agentes e documentos de orientacao, planejamento ou referencia que nao sejam usados na execucao, compilacao, empacotamento ou testes do projeto. A extensao do arquivo, por si so, nao determina a elegibilidade.
+- Nesses commits, nao execute suite de testes, compilacao, lint de codigo ou CI completo. Revise o diff, execute `git diff --check`, confira os links locais e a coerencia das instrucoes alteradas. Informe na entrega que a validacao completa foi dispensada por se tratar de alteracao exclusivamente documental.
+- A excecao nao abrange codigo, dependencias, configuracoes, scripts, workflows, assets usados pelo produto, documentacao executavel nem arquivos consumidos pelo aplicativo ou pelo build. Commits que misturem documentacao com essas alteracoes continuam sujeitos as validacoes aplicaveis.
+- Antes de iniciar testes ou validacoes de codigo, explique ao usuario quais verificacoes pretende executar, por que sao necessarias e seu alcance. Informe se podem exigir compilacao demorada, sem inventar estimativas. Pergunte se deseja continuar e aguarde confirmacao explicita; pedidos para alterar arquivos ou criar commits nao autorizam essas execucoes automaticamente.
+- Nao repita a pergunta para a mesma execucao ja autorizada. Peca nova confirmacao se precisar ampliar significativamente o escopo.
+- Se o usuario nao autorizar, preserve as alteracoes e informe quais verificacoes ficaram pendentes. Nao crie commits que exijam essas verificacoes sem uma dispensa explicita do usuario.
+- Durante execucoes longas, comunique avancos relevantes, falhas ou bloqueios, sem mensagens repetitivas de espera.
+- Revisao do diff, `git diff --check` e conferencia de links locais podem ser feitas sem confirmacao.
+
 These rules bind every AI agent and every human contributor working in this repository. They come before any task, instruction or deadline. `CLAUDE.md` holds the day-to-day working instructions. If the two ever disagree, **this file wins.**
 
 Some sections link to **craftrules**, the standards shared by the Crafting Apps. That repository is internal to the storytold team, so outside contributors can't open it. Every rule a contributor here must follow is stated in this file and `CLAUDE.md`; the craftrules links give team members the background.
