@@ -1,17 +1,4 @@
-<p align="center">
-
-## Politica de validacao local
-
-Siga a politica obrigatoria de [validacao documental e confirmacao para testes](AGENTS.md#validacao-documental-e-confirmacao-para-testes). Commits exclusivamente documentais elegiveis usam revisao do diff, `git diff --check`, conferencia de links locais e coerencia das instrucoes; informe a dispensa da validacao completa. Testes, compilacao, lint de codigo e CI exigem explicacao previa de necessidade e alcance e confirmacao explicita do usuario antes de executar. Comandos e rotinas abaixo estao sujeitos a essa politica, inclusive verificacoes iniciais; autonomia nao dispensa essa confirmacao.
-
-  <a href="https://getartcraft.com/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="docs/brand/artcraft-logo-white.svg">
-      <img alt="ArtCraft" src="docs/brand/artcraft-logo.svg" width="200">
-    </picture>
-  </a>
-</p>
-
+> **Creative Workshop — independent edition.** Based on pdfcraft by the ArtCraft team and contributors. Not affiliated with, endorsed by, or supported by ArtCraft. [Origin and branding policy](docs/branding.md).
 
 <p align="center">
   <img src="assets/app-icon/hicolor/256x256/apps/ai.storyteller.pdfcraft.png" width="128" height="128" alt="PdfCraft icon: an engraved lion on a teal tile">
@@ -31,18 +18,13 @@ Siga a politica obrigatoria de [validacao documental e confirmacao para testes](
   <img alt="Platforms: macOS, Windows, Linux, FreeBSD, web" src="https://img.shields.io/badge/runs%20on-macOS%20%C2%B7%20Windows%20%C2%B7%20Linux%20%C2%B7%20FreeBSD%20%C2%B7%20web-12a58a?style=flat-square">
   <img alt="No account, no telemetry" src="https://img.shields.io/badge/no%20account-no%20telemetry-0a7563?style=flat-square">
   <br>
-  <a href="https://sonarcloud.io/project/overview?id=storytold_pdfcraft"><img alt="Scanned by SonarCloud" src="https://img.shields.io/badge/Scanned_by-SonarCloud-4b9fd5?style=flat-square&logo=sonarqubecloud&logoColor=white"></a>
-  <a href="https://coderabbit.ai"><img alt="Reviewed by CodeRabbit" src="https://img.shields.io/coderabbit/prs/github/storytold/pdfcraft?style=flat-square&label=Reviewed%20by%20CodeRabbit&logo=coderabbit"></a>
 </p>
 
-<p align="center">
-  <a href="https://discord.gg/artcraft"><img alt="Join the ArtCraft community on Discord" src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" height="40"></a>
-</p>
 
 <p align="center">
-  <a href="https://getartcraft.com/apps/pdfcraft"><b>PdfCraft on getartcraft.com</b></a> ·
-  <a href="https://getartcraft.com/">ArtCraft</a> ·
-  <a href="https://getartcraft.com/apps">All Crafting Apps</a>
+  <a href="https://github.com/dfoliveira2143/pdfcraft"><b>PdfCraft on github.com/dfoliveira2143</b></a> ·
+  <a href="https://github.com/dfoliveira2143">Creative Workshop</a> ·
+  <a href="https://github.com/dfoliveira2143">All Crafting Apps</a>
 </p>
 
 <br>
@@ -53,9 +35,6 @@ Siga a politica obrigatoria de [validacao documental e confirmacao para testes](
   <sub>The PdfCraft Showcase, a 13-page specimen PDF, open with the All tools panel and threaded comments.</sub>
 </p>
 
-> [!NOTE]
-> **ArtCraft is a community of artists from all walks of life.** Digital, generative, music,
-> games &mdash; if you make things, you're one of us. **[Come say hi on Discord](https://discord.gg/artcraft).**
 
 <p align="center">
   <a href="#highlights">Highlights</a> ·
@@ -78,13 +57,7 @@ Siga a politica obrigatoria de [validacao documental e confirmacao para testes](
 
 ## Community
 
-PdfCraft is part of [ArtCraft](https://getartcraft.com). Come say hello, get help and follow development:
-
-- **Discord: [discord.gg/artcraft](https://discord.gg/artcraft)**. This is the fastest way to get help and share feedback. The app has a Discord button in its title bar.
-- **Web page:** [getartcraft.com/apps/pdfcraft](https://getartcraft.com/apps/pdfcraft)
-- **Source:** [github.com/storytold/pdfcraft](https://github.com/storytold/pdfcraft)
-
-The ArtCraft name and logos in `docs/brand/` are trademarks of the ArtCraft Team and are not open source. They may be used only unmodified, and only as part of PdfCraft (see `docs/brand/LICENSE-brand.txt`). Forks and modified versions must remove them.
+Support for this independent edition: [project issues](https://github.com/dfoliveira2143/pdfcraft/issues).
 
 ## Highlights
 
@@ -263,7 +236,6 @@ Press <kbd>⌘K</kbd> to search every tool and command, or browse the **All tool
 <table>
 <tr>
 <td width="50%"><img src="docs/images/pdfcraft-palette.png" alt="The command palette searching for 'page', listing Page grid, Page labels, Rotate pages, Insert pages, Delete pages, Extract pages and more, each with the tool it belongs to"></td>
-<td width="50%"><img src="docs/images/pdfcraft-tools.png" alt="The Welcome to PdfCraft home screen with recommended tools, a recent file, a privacy note, and the full tool catalogue in the side panel"></td>
 </tr>
 <tr>
 <td align="center"><sub>The <kbd>⌘K</kbd> command palette</sub></td>
@@ -388,7 +360,7 @@ PdfCraft is a clean-room implementation. Its behaviour comes from the ISO 32000 
 Building needs Rust 1.95 or later.
 
 ```sh
-git clone https://github.com/storytold/pdfcraft
+git clone https://github.com/dfoliveira2143/pdfcraft
 cd pdfcraft
 cargo xtask models                                # fetch the OCR models Scan & OCR needs (release builds include them)
 cargo run --release -p pdfcraft -- some.pdf     # desktop app
@@ -412,7 +384,7 @@ git clone https://github.com/storytold/craft-fonts ../craft-fonts
 CRAFT_FONTS_DIR=../craft-fonts cargo run --release -p pdfcraft -- some.pdf
 ```
 
-Each [GitHub release](https://github.com/storytold/pdfcraft/releases) has ready-made builds for macOS,
+Each [GitHub release](https://github.com/dfoliveira2143/pdfcraft/releases) has ready-made builds for macOS,
 Windows, Linux (AppImage, Flatpak, `.deb`, `.rpm` and a tarball), FreeBSD and the web; see
 [Downloads](#downloads). On Gentoo, the community [::snakebyte
 overlay](https://github.com/switch87/snakebyte-overlay) packages the Linux release as
@@ -446,9 +418,11 @@ The summary is in **[ROADMAP.md](ROADMAP.md)**; the full assessment by dimension
 
 ## Downloads
 
-**New to PdfCraft?** Download it from the [PdfCraft page on getartcraft.com](https://getartcraft.com/apps/pdfcraft). That's the easiest way to install it.
+Creative Workshop packages have not yet been rebuilt or validated. The inherited platform instructions below describe packaging capabilities, not a guarantee that a release is available or signed.
 
-**Want a specific build or format?** On GitHub, the [latest release](https://github.com/storytold/pdfcraft/releases/latest) has every build listed below, and [all releases](https://github.com/storytold/pdfcraft/releases) has earlier versions and their notes. `<ver>` in the file names is the version number, and `SHA256SUMS.txt` lists a checksum for every file.
+**New to PdfCraft?** Download it from the [PdfCraft page on github.com/dfoliveira2143](https://github.com/dfoliveira2143/pdfcraft). That's the easiest way to install it.
+
+**Want a specific build or format?** On GitHub, the [latest release](https://github.com/dfoliveira2143/pdfcraft/releases/latest) has every build listed below, and [all releases](https://github.com/dfoliveira2143/pdfcraft/releases) has earlier versions and their notes. `<ver>` in the file names is the version number, and `SHA256SUMS.txt` lists a checksum for every file.
 
 ### Windows
 
@@ -496,11 +470,7 @@ MSI of the same version replace the installed one without asking. Two different 
 be told apart by version, so if your deployment tool checks the file, pin its SHA-256 from
 `SHA256SUMS.txt` (`Get-FileHash <file> -Algorithm SHA256`).
 
-**Signing identities.** The Windows MSIs and both executables are signed through Azure Trusted
-Signing with a certificate issued to `Learning Machines Inc` (Atlanta, Georgia, US). The macOS app
-and command-line tool are signed with the Developer ID `Learning Machines LLC (DJ6XS33FX8)` and
-notarized. The MSI's manufacturer, shown as the publisher in Installed apps, is
-`Learning Machines LLC`.
+**Signing identities.** The upstream certificates do not apply to Creative Workshop. No signed or notarized build of this independent edition has been verified. Package metadata identifies Creative Workshop contributors; this is not a code-signing certificate.
 
 ### macOS
 
@@ -540,45 +510,7 @@ Every other Linux build needs glibc 2.35 or newer (Ubuntu 22.04+, Debian 12+, Fe
 
 ## The Crafting Apps
 
-PdfCraft is one of the **Crafting Apps**: free, open-source creative tools from the
-[ArtCraft](https://getartcraft.com/) team, each written from scratch in Rust and each able to
-stand on its own.
-
-| | App | What it's for | Code | Learn more |
-|:-:|---|---|---|---|
-| <img src="https://raw.githubusercontent.com/storytold/photocraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.photocraft.png" alt="" width="32" height="32"> | **PhotoCraft** | Image editing: layers, masks, type and real PSD files | [GitHub](https://github.com/storytold/photocraft) | [Website](https://getartcraft.com/apps/photocraft) |
-| <img src="https://raw.githubusercontent.com/storytold/vectorcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.vectorcraft.png" alt="" width="32" height="32"> | **VectorCraft** | Vector illustration | [GitHub](https://github.com/storytold/vectorcraft) | [Website](https://getartcraft.com/apps/vectorcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/filmcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.filmcraft.png" alt="" width="32" height="32"> | **FilmCraft** | Video editing, color and sound | [GitHub](https://github.com/storytold/filmcraft) | [Website](https://getartcraft.com/apps/filmcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/lightcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.lightcraft.png" alt="" width="32" height="32"> | **LightCraft** | Photo library and raw development | [GitHub](https://github.com/storytold/lightcraft) | [Website](https://getartcraft.com/apps/lightcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/pdfcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.pdfcraft.png" alt="" width="32" height="32"> | **PdfCraft** | **Reading, organizing and protecting PDFs · you are here** | [GitHub](https://github.com/storytold/pdfcraft) | [Website](https://getartcraft.com/apps/pdfcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/effectcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.effectcraft.png" alt="" width="32" height="32"> | **EffectCraft** | Motion graphics and visual effects | [GitHub](https://github.com/storytold/effectcraft) | [Website](https://getartcraft.com/apps/effectcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/designcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.designcraft.png" alt="" width="32" height="32"> | **DesignCraft** | Page layout and publishing | [GitHub](https://github.com/storytold/designcraft) | [Website](https://getartcraft.com/apps/designcraft) |
-
-And [**ArtCraft**](https://getartcraft.com/) itself, our AI image and video studio for artists who want real control.
-
-<br>
-
-<p align="center">
-  <a href="https://discord.gg/artcraft"><img alt="Join the ArtCraft community on Discord" src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" height="40"></a>
-</p>
-
-<h3 align="center">Come make things with us</h3>
-
-<p align="center">
-  Our Discord is where artists of every kind hang out: people who paint, shoot, draw, cut film,
-  set type, and people still figuring out what they like to make. Share what you're working on,
-  ask for help, tell us what's broken, or tell us what you wish these tools could do.
-  Whatever your medium and however long you've been at it, you're welcome here.
-</p>
-
-<p align="center">
-  <a href="https://discord.gg/artcraft"><b>discord.gg/artcraft</b></a> ·
-  <a href="https://getartcraft.com/">getartcraft.com</a> ·
-  <a href="https://getartcraft.com/apps">The Crafting Apps</a> ·
-  <a href="https://getartcraft.com/apps/pdfcraft">PdfCraft</a>
-</p>
-
----
+This independent edition belongs to **Creative Workshop**. It is not an official ArtCraft product.
 
 ## License and credits
 
@@ -590,15 +522,8 @@ with its author, source and license in [ATTRIBUTION.md](ATTRIBUTION.md). Release
 the Japanese fonts of [craft-fonts](https://github.com/storytold/craft-fonts/blob/main/ATTRIBUTION.md)
 (SIL Open Font License 1.1).
 
-The ArtCraft name, wordmark and logos in [`docs/brand/`](docs/brand/) are trademarks of the
-ArtCraft Team and are not covered by this license. They may be used only unmodified, and only as
-part of this repository and PdfCraft, under [`docs/brand/LICENSE-brand.txt`](docs/brand/LICENSE-brand.txt).
-Forks and modified versions must remove them.
+The restricted ArtCraft brand assets are excluded from this edition. Original trademark terms remain in [docs/brand/LICENSE-brand.txt](docs/brand/LICENSE-brand.txt); see [branding policy](docs/branding.md).
 
-<p align="center">
-  <a href="https://getartcraft.com/"><img alt="ArtCraft" src="docs/brand/artcraft-mark.svg" width="28"></a><br>
-  <sub>Made by the <a href="https://getartcraft.com/">ArtCraft</a> team and community.</sub>
-</p>
 
 The Tools panel sits on the left, or on the right with Preferences ▸ Tools panel side. The rail stays at the right edge and opens one side panel beside it. Drag a panel's inner edge to resize it; widths are remembered. F4 shows or hides the side panel and Shift+F4 the Tools panel (also in the View menu); View ▸ Reset side panels restores the default arrangement.
 

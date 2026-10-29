@@ -102,7 +102,7 @@
 	Flatten Fill & Sign when saving	ادغام کردن پر کردن و امضا هنگام ذخیره
 	Text, marks and signatures become part of the page. Other comments stay editable.	متن، نشانه‌ها و امضا‌ها بخشی از صفحه می‌شوند. سایر یادداشت‌ها قابل‌ویرایش می‌مانند.
 	OK	تأیید
-	Join our Discord	به دیسکورد ما بپیوندید
+	Project support	به دیسکورد ما بپیوندید
 	Close	بستن
 	Next / previous match	تطابق بعدی / قبلی
 	Copy selected text	رونوشت متن انتخاب‌شده
@@ -173,7 +173,7 @@
 	Zoom — type a percentage and press Enter	بزرگنمایی — یک درصد وارد کنید و Enter را فشار دهید
 	Welcome to PdfCraft	به PdfCraft خوش آمدید
 	An open-source PDF workbench — local, private, and scriptable.	یک میزکار PDF متن باز — محلی، خصوصی و قابل اسکریپت‌نویسی.
-	Join the ArtCraft community	به جامعه ArtCraft بپیوندید
+	Project support	به جامعه Creative Workshop بپیوندید
 	Get help, share feedback and follow development on Discord.	کمک بگیرید، بازخورد بدهید و توسعه را در دیسکورد دنبال کنید.
 	Recommended tools	ابزار‌های پیشنهادی
 	Use now	همین حالا استفاده کنید
@@ -319,10 +319,10 @@
 	Split document…	تقسیم سند…
 	Number pages…	شماره‌گذاری صفحه‌ها…
 	Keyboard shortcuts	میانبر‌های صفحه کلید
-	Join the ArtCraft Discord	به دیسکورد ArtCraft بپیوندید
+	Project support	به دیسکورد Creative Workshop بپیوندید
 	PdfCraft web page	صفحه وب PdfCraft
 	PdfCraft on GitHub	PdfCraft در GitHub
-	ArtCraft website	وبسایت ArtCraft
+	Creative Workshop website	وبسایت Creative Workshop
 	Check for updates…	بررسی به‌روز‌رسانی‌ها…
 	About PdfCraft	درباره PdfCraft
 	Export a PDF	برونبرد یک PDF

@@ -46,3 +46,5 @@ Os guias são mapas de navegação, não novas cópias dos contratos técnicos. 
 - [UI and interaction parity](ui-parity.md)
 - [Windows renderer startup errors and the OpenGL fallback](windows-renderer-startup.md)
 - [Word count](word-count.md)
+
+- [Creative Workshop: origem, identidade e publicação](branding.md)
