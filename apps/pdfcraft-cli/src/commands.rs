@@ -2,7 +2,7 @@ use super::options::{
     COMBINE_OPTIONS, EXTRACT_OPTIONS, INFO_OPTIONS, RENDER_OPTIONS, SPLIT_OPTIONS, TEXT_OPTIONS, can_be_path_value, flag, needs_value, positional,
     validate_options,
 };
-use super::*;
+use super::{Arc, CliError, ImageFormat, PageRenderer, Path, PathBuf, RenderConfig, RenderRequest, RequestKind, Write, inspect, stdout_line};
 
 pub(crate) fn read(path: &str) -> Result<Arc<Vec<u8>>, String> {
     std::fs::read(path).map(Arc::new).map_err(|e| format!("{path}: {e}"))
@@ -366,8 +366,9 @@ pub(crate) fn render(args: &[String]) -> Result<(), CliError> {
         Some("pam") => None,
         _ => return Err(format!("render: --out {out}: use a .png, .jpg, .tif or .pam name").into()),
     };
-    // The app renders a display copy that draws comments missing their /AP streams; the CLI
-    // must agree with it (and with independent viewers), while keeping the file it reads intact.
+    // The app renders a display copy that draws comments missing their /AP streams and the state
+    // of named-layer signatures (here with no trusted certificates); the CLI must agree with it
+    // (and with independent viewers), while keeping the file it reads intact.
     let bytes = read(path)?;
     let password = flag(args, "--password");
     // The renderer takes only the user password of R2–R4 files; `Session::open` and the display
